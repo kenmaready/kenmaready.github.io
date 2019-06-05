@@ -1,0 +1,86 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Cinzel Decorative';
+  font-size: 1.1em;
+  color: black;
+  line-height: 1.2em;
+}
+
+header {
+  position:fixed;
+  top: 0px;
+  width: 100%;
+  font-family: 'Cinzel Decorative';
+}
+
+#header-img {
+  width: 150px;
+  margin-left: 50px;
+}
+
+nav p {
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+#header-space {
+  height: 80px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 70% 1fr 1fr 1fr;
+  align-items: center;
+  background-color: gray;
+}
+
+a {
+  font-size: 1.5em;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+#small-link {
+  font-size: 1em;
+  color: darkblue;
+}
+
+#small-link:hover {
+  color: white;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 1800px) {
+  nav {
+  grid-template-columns: 40% 1fr 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 90%;
+  }
+}
